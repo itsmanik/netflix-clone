@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Responsive dropdown menu - Bedimcode</title>
+    </head>
+    <body>
+        <!--=============== Cursor ===============-->
+        <div class="cursor" id="cursor"></div>
+        <div class="pointed"></div>
+
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        Show <span class="plus-icon">+</span> Tell<span
+                            class="tm"
+                            >TM</span
+                        >
+                    </a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="#" class="nav__link">Work</a></li>
+
+                        <li><a href="#" class="nav__link">Studio</a></li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">Services</div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Branding
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Websites & Digital Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Immersive
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">Sectors</div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Energy & Utilities
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Retail & Commerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Investment Firms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Food & manufacturing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Saas & Technology
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        Property, Development & Proptech
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="nav__link">Insights</a></li>
+                        <li><a href="#" class="nav__link">Careers</a></li>
+                        <li>
+                            <button class="button">Start a project</button>
+                            <button class="button arrow">&rarr;</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>

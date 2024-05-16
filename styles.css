@@ -429,11 +429,14 @@ body {
 }
 
 .imgs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-    padding: 2rem;
+  idth: 500px;
+  padding: 10px;
+  display: grid;
+  flex-flow: row;
+  overflow-x: auto;
+  border-radius: 0rem;
+  grid-auto-flow: column;
+  border: 1px solid rgb(170, 170, 170);
 }
 
 .imgs img {

@@ -13,13 +13,21 @@ const showMenu = (toggleId, navId) => {
 };
 
 var cursor = document.getElementById("cursor");
-const cursorPointed = document.querySelector('.pointed');
+const cursorPointed = document.querySelector(".pointed");
 document.body.addEventListener("mousemove", function (e) {
     cursor.style.left = e.clientX + "px";
     cursor.style.top = e.clientY + "px";
     cursorPointed.style.left = e.clientX + "px";
     cursorPointed.style.top = e.clientY + "px";
-    
 });
+
+let doc = document.querySelector(".header-container");
+let video = document.querySelector(".video");
+doc.addEventListener("click", () => {
+    video.classList.toggle("vidZoom");
+    console.log("test");
+});
+
+document.getElementById('vid').play();
 
 showMenu("nav-toggle", "nav-menu");

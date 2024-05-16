@@ -354,11 +354,12 @@ a {
     left: -100px;
     top: 50%;
     mix-blend-mode: difference;
-    background-color: transparent;
+    mix-blend-mode: difference;
     z-index: 10000;
     border: 1px solid white;
     height: 50px;
     width: 50px;
+    z-index: 1000000;
     transition: all 300ms ease-out;
 }
 
@@ -367,6 +368,9 @@ body {
 }
 
 .pointed {
+    background-color: transparent;
+    z-index: 10000;
+    pointer-events: none;
     position: fixed;
     width: 7px;
     height: 7px;
@@ -377,17 +381,19 @@ body {
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .hero-text {
-  z-index: -1000;
-  cursor: none;
-    font-size: 8rem;
-    font-weight: 400;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    z-index: -1000;
+    cursor: none;
+    font-size: 15rem;
+    font-weight: 350;
     width: 10000rem;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 0%;
     animation: weeee 700s linear infinite;
 }
@@ -403,4 +409,84 @@ body {
     100% {
         transform: translateX(100%);
     } */
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sub-text {
+    margin-left: 7rem;
+}
+
+.header-container a {
+    color: black;
+    margin-top: 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.imgs img {
+    height: 30rem;
+}
+
+.video {
+    /* background-color: red; */
+    height: 33rem;
+    z-index: -10000;
+}
+
+.vidZoom {
+    position: absolute;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+video {
+    height: 100%;
+    height: 33rem;
+    object-fit: cover;
+    width: 100%;
+}
+
+.header-container h2 {
+    font-weight: 300;
+}
+
+.sub-text {
+    margin-top: 20rem;
+}
+
+.second-text {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 70rem;
+    margin: 5rem auto;
+    font-weight: 300;
+}
+
+.second-text span {
+    border: 1px solid black;
+    border-radius: 50rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+}
+
+.work {
+    font-size: 20rem;
+    font-weight: 300;
+    display: inline-block;
 }
